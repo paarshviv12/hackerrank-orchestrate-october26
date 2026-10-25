@@ -1,0 +1,14 @@
+{
+ "source": "pdf text extraction (pdftotext) + review (cached)",
+ "records": [
+  {
+   "resource_id": "support_001",
+   "system": "support_platform",
+   "record_type": "SUPPORT_ATTACHMENT",
+   "full_name": "Priya Raman",
+   "email": "priya.raman@gmail.com",
+   "phone": "+91 98765 73142",
+   "ticket_id": "CS-4827"
+  }
+ ]
+}

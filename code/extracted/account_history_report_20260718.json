@@ -1,0 +1,14 @@
+{
+ "source": "pdf text extraction (pdftotext) + review (cached)",
+ "records": [
+  {
+   "resource_id": "export_1842",
+   "system": "export_service",
+   "record_type": "USER_EXPORT",
+   "customer_reference": "user_18",
+   "full_name": "Ingrid Dahl",
+   "email": "ingrid.dahl@outlook.com",
+   "statement": "NST-2026-0718-1842"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "source": "pdf text extraction (pdftotext) + review (cached)",
+ "records": [
+  {
+   "resource_id": "audit_record_003",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "subject_reference": "user_03",
+   "retain_until": "2027-08-25T04:03:00Z"
+  }
+ ]
+}

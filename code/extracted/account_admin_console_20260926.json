@@ -1,0 +1,21 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "account_5762",
+   "system": "account_service",
+   "record_type": "USER_PROFILE",
+   "customer_reference": "user_11",
+   "full_name": "Haruka Sato",
+   "email": "haruka.s1838@zoho.com",
+   "phone": "+81 90 7610 2507",
+   "account_status": "ACTIVE"
+  },
+  {
+   "resource_id": "support_9538",
+   "system": "support_platform",
+   "context_only": true,
+   "ticket_id": "CS-8538"
+  }
+ ]
+}

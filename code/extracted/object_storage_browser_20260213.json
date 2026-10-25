@@ -1,0 +1,12 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "object_19",
+   "system": "object_storage",
+   "record_type": "SUPPORT_ATTACHMENT",
+   "file_name": "delivery_confirmation_19.pdf",
+   "uploaded_by": "support-service"
+  }
+ ]
+}

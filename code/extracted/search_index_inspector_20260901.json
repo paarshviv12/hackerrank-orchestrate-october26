@@ -1,0 +1,19 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "search_428",
+   "system": "search_service",
+   "record_type": "SEARCH_INDEX_ENTRY",
+   "display_name": "Gabriel Silva",
+   "email": "g.silva76@gmail.com",
+   "customer_reference": "user_13"
+  },
+  {
+   "resource_id": "search_1874",
+   "system": "search_service",
+   "record_type": "SEARCH_INDEX_ENTRY",
+   "email": "g.silva76.jr@gmail.com"
+  }
+ ]
+}

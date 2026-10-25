@@ -1,0 +1,16 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "tombstone_17",
+   "system": "identity_service",
+   "record_type": "ACCOUNT_TOMBSTONE",
+   "subject_reference": "user_17",
+   "name": null,
+   "email": null,
+   "phone": null,
+   "email_hash": null,
+   "account_status": "DELETED"
+  }
+ ]
+}

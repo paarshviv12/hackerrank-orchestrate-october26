@@ -1,0 +1,13 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "marketing_001",
+   "system": "marketing_platform",
+   "record_type": "MARKETING_PROFILE",
+   "full_name": "Soo-jin Park",
+   "email": "sj.park@naver.com",
+   "phone": "+82 10-5837-9451"
+  }
+ ]
+}

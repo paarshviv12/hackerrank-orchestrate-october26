@@ -1,0 +1,21 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "data_flow_1121",
+   "system": "integration_service",
+   "record_type": "DATA_FLOW",
+   "subject_selector": "jain.aditi@gmail.com",
+   "enabled": true,
+   "mode": "continuous_sync"
+  },
+  {
+   "resource_id": "data_flow_9846",
+   "system": "integration_service",
+   "record_type": "DATA_FLOW",
+   "subject_selector": "lucia-torres@gmail.com",
+   "enabled": true,
+   "mode": "continuous_sync"
+  }
+ ]
+}

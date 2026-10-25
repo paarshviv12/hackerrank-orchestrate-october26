@@ -1,0 +1,13 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "analytics_7438",
+   "system": "analytics_platform",
+   "record_type": "ANALYTICS_PROFILE",
+   "user_id": "user_20",
+   "full_name": "Omar Darwish",
+   "email": "darwish.omar@icloud.com"
+  }
+ ]
+}

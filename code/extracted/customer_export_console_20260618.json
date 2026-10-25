@@ -1,0 +1,30 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "export_1260",
+   "system": "export_service",
+   "record_type": "USER_EXPORT",
+   "owner_email": "ingrid.dahl@outlook.com",
+   "download_available": true
+  },
+  {
+   "resource_id": "export_1261",
+   "system": "export_service",
+   "record_type": "USER_EXPORT",
+   "owner_email": "marcus.lee@northstar.shop"
+  },
+  {
+   "resource_id": "export_1259",
+   "system": "export_service",
+   "record_type": "USER_EXPORT",
+   "owner_email": "sara.kim@northstar.shop"
+  },
+  {
+   "resource_id": "export_1258",
+   "system": "export_service",
+   "record_type": "USER_EXPORT",
+   "owner_email": "daniel.park@northstar.shop"
+  }
+ ]
+}

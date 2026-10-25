@@ -1,0 +1,41 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "audit_record_001",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "context_only": true
+  },
+  {
+   "resource_id": "audit_record_002",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "context_only": true
+  },
+  {
+   "resource_id": "audit_record_003",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "subject_reference": "user_03"
+  },
+  {
+   "resource_id": "audit_record_004",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "context_only": true
+  },
+  {
+   "resource_id": "audit_record_005",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "context_only": true
+  },
+  {
+   "resource_id": "audit_record_006",
+   "system": "security_service",
+   "record_type": "SECURITY_AUDIT_LOG",
+   "context_only": true
+  }
+ ]
+}

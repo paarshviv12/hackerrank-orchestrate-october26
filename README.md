@@ -1,3 +1,62 @@
+# Ghost Data Still Exists: deletion-audit agent (solution)
+
+## Setup and run
+
+You need Python 3.10 or newer. Only the standard library is used (`csv`, `json`, `sqlite3`, `re`).
+
+```bash
+# from the repository root
+python3 code/main.py                        # audits dataset/deletion_requests.csv -> ./output.csv
+python3 code/evaluation/main.py -v          # scores the agent on the 32 labelled samples
+python3 code/evaluation/custom_cases.py     # runs the team-written evaluation cases
+python3 code/evaluation/ablation.py         # what each technique contributes + confidence calibration
+python3 code/evaluation/validate_submission.py   # pre-submission contract checks
+python3 code/explain.py case_49             # why a case got its answer (reads audit_trail.json)
+python3 code/explain.py --low               # low-confidence cases and why
+```
+
+Every run writes two files. `output.csv` is the submission. `audit_trail.json` holds, for each case, the matched subject, every resource with its rule, linking method, state, the evidence file that proves it, the decision, and a confidence level with reasons.
+
+There are two optional model-backed paths. Neither is needed to reproduce `output.csv`:
+
+```bash
+pip install anthropic && export ANTHROPIC_API_KEY=...    # key comes from the environment only
+python3 code/main.py --llm                  # LLM intent classifier (rules are the fallback)
+python3 code/extract_media.py --force       # regenerate the PDF/screenshot extraction cache
+```
+
+## Architecture
+
+```text
+dataset/ ──► evidence_parser.py ──► observations (file, time, system, resource, exists/pii/active, identifiers)
+               SQL (sqlite3, primary + replica tables) · JSON exports/bundles · 7 log syntaxes
+               (logfmt, JSON, syslog, pipe, bracket, cloud-runtime, trace) · handover txt
+               · PDFs/screenshots via code/extracted/ (Claude-vision cache)
+          ──► identity.py         current + historical e-mails, phones, hashes, user_id
+          ──► request_classifier  deletion intent (multilingual rules, optional LLM)
+          ──► engine.py
+                1. link resources to each request: identifiers in evidence, data-catalog links
+                   (rejected when the record names someone else), and the deletion-worker run
+                   around reported_at for identifier-free records
+                2. state at audit_at = latest evidence captured on or before audit_at
+                   (OR across primary/replica rows, so replication drift surfaces)
+                3. apply deletion_rules.csv per data category (DELETE / REDACT / ANONYMIZE /
+                   RETAIN, tombstones, data flows, restore paths)
+                4. emit FINDING → REMEDIATION → VERIFICATION in the contract's operation order,
+                   then by system_id and resource_id
+          ──► output.csv
+```
+
+Some design decisions:
+
+- **Claims vs. proof.** `reported_status` and `reported_result` never decide a state. Activity rows are used only to discover which resources belong to a request. As a last resort, an explicit status check is cited by its `activity_id`.
+- **Time cutoff.** Evidence captured after `audit_at` is never cited and never changes a decision.
+- **Proof for COMPLETE.** Every COMPLETE verification cites the file that shows the compliant state. INCOMPLETE remediation and post-remediation checks use `""`.
+
+Reports are in `code/evaluation/evaluation_report.md` (accuracy, custom cases, failures and fixes) and `code/evaluation/usage_report.md` (tokens and cost).
+
+---
+
 # HackerRank Orchestrate - October 2026
 
 ## Ghost Data Still Exists

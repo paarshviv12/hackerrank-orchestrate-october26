@@ -1,0 +1,14 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "support_1034",
+   "system": "support_platform",
+   "record_type": "SUPPORT_MESSAGE",
+   "requester_name": "Kofi Agyeman",
+   "requester_email": "kagyeman8947@fastmail.com",
+   "ticket_id": "CS-5034",
+   "shared_context": "assigned agent and order ORD-20265034"
+  }
+ ]
+}

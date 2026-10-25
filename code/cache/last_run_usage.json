@@ -1,0 +1,14 @@
+{
+ "models": {},
+ "overall": {
+  "calls": 0,
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "cost_usd": 0.0,
+  "total_tokens": 0,
+  "avg_tokens_per_request": 0.0,
+  "cost_per_request_usd": 0.0
+ },
+ "requests": 518,
+ "runtime_seconds": 1.97
+}

@@ -1,0 +1,35 @@
+{
+ "source": "claude vision transcription (cached)",
+ "records": [
+  {
+   "resource_id": "backup_9287",
+   "system": "backup_service",
+   "record_type": "BACKUP_ARCHIVE",
+   "customer_email": "areed1433@gmail.com",
+   "archive_path": "s3://northstar-backups/customer-platform/weekly/segment-42-20260426.tar.zst",
+   "restore_allowed": true,
+   "retention_end": "2026-07-26"
+  },
+  {
+   "resource_id": "backup_9291",
+   "system": "backup_service",
+   "record_type": "BACKUP_ARCHIVE",
+   "customer_email": "bluepeakco@outlook.com",
+   "restore_allowed": true
+  },
+  {
+   "resource_id": "backup_9288",
+   "system": "backup_service",
+   "record_type": "BACKUP_ARCHIVE",
+   "customer_email": "miller.logistics@company.com",
+   "restore_allowed": true
+  },
+  {
+   "resource_id": "backup_9286",
+   "system": "backup_service",
+   "record_type": "BACKUP_ARCHIVE",
+   "customer_email": "summit-retail@company.com",
+   "restore_allowed": true
+  }
+ ]
+}
